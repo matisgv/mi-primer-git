@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafío Clase 2</title>
+  </head>
+  <body>
+    <header>
+      <h1>Perfil de Matías Segovia</h1>
+      <img
+        src="./img/PXL_20230316_124245820.jpg"
+        alt="Foto de Matias"
+        width="30%"
+        height="30%"
+      />
+    </header>
+    <main>
+      <section>
+        <h2>Datos Personales</h2>
+        <ul>
+          <li>22 años</li>
+          <li>Mar del Plata, Argentina</li>
+          <li>matiasgbsegovia@gmail.com</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Bio</h2>
+        <p>
+          Estudiante de Desarrollo Full Stack en Nucba, apasionado por la
+          música, amante de Lionel Messi.
+        </p>
+      </section>
+
+      <hr />
+
+      <section>
+        <h3>Contacto</h3>
+        <form>
+          <div>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Juan Perez" required />
+          </div>
+
+          <div>
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" min="0" max="120" required />
+          </div>
+
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="juanperez@abc.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="mensaje">Deja tu mensaje o consulta:</label>
+            <br />
+            <textarea
+              name="mensaje"
+              id="mensaje"
+              cols="30"
+              rows="10"
+              placeholder="Escribe aquí tu mensaje"
+              required
+              maxlength="200"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar" />
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
